@@ -47,8 +47,6 @@ fi
 run_or_skip "Installing Waybar" pacman -S waybar --noconfirm
 run_or_skip "Installing Pywal" sudo pacman -S python-pywal --noconfirm
 run_or_skip "Installing fastfetch" sudo pacman -S fastfetch --noconfirm
-run_or_skip "Installing themix" sudo pacman -S themix-full-git --noconfirm
-run_or_skip "Installing Dolphin" sudo pacman -S dolphin --noconfirm
 run_or_skip "Installing Rofi" sudo pacman -S rofi --noconfirm
 run_or_skip "Installing VirtualBox" sudo pacman -S virtualbox --noconfirm
 run_or_skip "Installing NWG Look" sudo pacman -S nwg-look --noconfirm
@@ -58,6 +56,8 @@ run_or_skip "Installing Wl-clipboard " sudo pacman -S wl-clipboard --noconfirm
 run_or_skip "Installing Cliphist" sudo pacman -S cliphist --noconfirm
 run_or_skip "Installing Rofi-emoji" sudo pacman -S rofi-emoji --noconfirm
 run_or_skip "Installing Hyprlock" sudo pacman -S hyprlock
+run_or_skip "Installing Extras" sudo pacman -S xdg-desktop-portal-hyprland swaync swww playerctl swayosd 
+run_or_skip "Installing Fonts?" sudo pacman -S nerd-fonts 
 
 # -------------------------------
 # FLATPAK + FLATHUB
@@ -70,13 +70,11 @@ echo "==> Installing Flatpaks..."
 flatpak install -y flathub \
     app.zen_browser.zen \
     com.github.tchx84.Flatseal \
-    io.github.peazip.PeaZip \
     dev.vencord.Vesktop \
     com.visualstudio.code \
     com.spotify.Client \
     org.kde.krita \
     org.azahar_emu.Azahar \
-    org.kde.gwenview \
     org.gnome.clocks \
     com.obsproject.Studio\
     com.valvesoftware.Steam || echo "⚠️ Some flatpaks failed — continuing."
