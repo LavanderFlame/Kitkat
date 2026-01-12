@@ -1,0 +1,83 @@
+/**
+ * @name midnight-pywal
+ * @description Midnight Discord theme powered by pywal
+ * @author you
+ */
+
+@import url('https://refact0r.github.io/midnight-discord/build/midnight.css');
+
+:root {
+	/* font */
+	--font: 'figtree';
+
+	/* top left corner text */
+	--corner-text: 'Midnight';
+
+	/* status indicators */
+	--online-indicator: {color2};
+	--dnd-indicator: {color1};
+	--idle-indicator: {color3};
+	--streaming-indicator: {color5};
+
+	/* accent colors */
+	--accent-1: {color4};   /* links */
+	--accent-2: {color4};   /* unread/mentions */
+	--accent-3: {color4};   /* buttons */
+	--accent-4: {color6};   /* hover */
+	--accent-5: {color12};  /* active */
+
+	--mention: {color0};
+	--mention-hover: {color6};
+
+	/* text colors */
+	--text-0: {background};
+	--text-1: {foreground};
+	--text-2: {foreground};
+	--text-3: {color7};
+	--text-4: {color7};
+	--text-5: {color8};
+
+	/* background colors */
+	--bg-1: {color4};
+	--bg-2: {color0};
+	--bg-3: {color0};
+	--bg-4: {background};
+
+	--hover: {color0};
+	--active: {color0};
+	--message-hover: {color0};
+
+	/* spacing */
+	--spacing: 12px;
+
+	/* roundness */
+	--roundness-xl: 22px;
+	--roundness-l: 20px;
+	--roundness-m: 16px;
+	--roundness-s: 12px;
+	--roundness-xs: 10px;
+	--roundness-xxs: 8px;
+
+	/* icons */
+	--discord-icon: none;
+	--moon-icon: block;
+	--moon-icon-url: url('https://upload.wikimedia.org/wikipedia/commons/c/c4/Font_Awesome_5_solid_moon.svg');
+	--moon-icon-size: auto;
+
+	/* filters */
+	--login-bg-filter: saturate(0.3) brightness(0.4);
+	--green-to-accent-3-filter: hue-rotate(56deg) saturate(1.4);
+	--blurple-to-accent-3-filter: hue-rotate(304deg) saturate(0.8) brightness(1.2);
+}
+
+/* Selected chat/friend text */
+.selected_f5eb4b,
+.selected_f6f816 .link_d8bfb3 {
+	color: var(--text-0) !important;
+	background: var(--accent-3) !important;
+}
+
+.selected_f6f816 .link_d8bfb3 * {
+	color: var(--text-0) !important;
+	fill: var(--text-0) !important;
+}

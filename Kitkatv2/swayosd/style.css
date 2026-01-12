@@ -1,0 +1,48 @@
+@import url("/home/lavander/.cache/wal/colors-waybar.css");
+
+window#osd {
+  border-radius: 10px;
+  border: 2px solid @color1;
+  background: alpha(@background, 0.4);
+}
+
+window#osd #container {
+  margin: 0px;
+  padding: 6px;
+  background: @background;
+}
+
+window#osd image {
+  -gtk-icon-transform: scale(0.7);
+}
+
+window#osd image,
+window#osd label {
+  color: @color1;
+}
+
+window#osd progressbar:disabled,
+window#osd image:disabled {
+  opacity: 0.5;
+}
+
+window#osd progressbar {
+  min-height: 6px;
+  border-radius: 999px;
+  background: @color1;
+  border: none;
+}
+
+window#osd trough {
+  min-height: inherit;
+  border-radius: inherit;
+  border: none;
+  background: alpha(@background, 0.5);
+}
+
+window#osd progress {
+  min-height: inherit;
+  border-radius: inherit;
+  border: none;
+  background: @color4;
+}

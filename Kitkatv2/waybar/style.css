@@ -1,0 +1,180 @@
+@import url("/home/lavander/.cache/wal/colors-waybar.css");
+
+#waybar.topBar{
+    background-color: transparent;
+}
+
+#workspaces {
+    background-color: @background;
+   margin: 6px 2px 6px 8px;
+	padding: 8px 14px 8px 10px;
+    border-radius: 12px;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+#workspaces button {
+    padding: 0px 5px;
+    margin: 2px 3px;
+    border: 0px;
+    color: #FFF;
+    transition: all 0.1s ease-in-out;
+    opacity: 0.5;
+}
+
+#workspaces button.active {
+    color: #FFF;
+    background: @color4;
+    border-radius: 5px;
+    padding: 0px 15px;
+    transition: all 0.1s ease-in-out;
+    opacity: 1.0;
+}
+
+#workspaces button:hover {
+    color: #FFF;
+    background: @foreground;
+    border-radius: 15px;
+    opacity: 0.8;
+}
+
+#custom-launcher,
+#window{
+    margin: 6px 2px 6px 8px;
+	padding: 8px 14px 8px 10px;
+	border-radius: 12px;
+    background-color: @background;
+    color: #FFF;
+}
+
+#taskbar{
+    margin: 6px 2px 6px 8px;
+	padding: 8px 14px 8px 10px;
+	border-radius: 12px;
+    background-color: @background;
+}
+
+#taskbar button{
+     padding: 0px 5px;
+    margin: 2px 3px;
+    border: 0px;
+    color: #FFF;
+    transition: all 0.1s ease-in-out;
+    opacity: 0.5;
+}
+
+#taskbar button.active{
+    color: #FFF;
+    background: @color4;
+    border-radius: 5px;
+    padding: 0px 15px;
+    transition: all 0.1s ease-in-out;
+    opacity: 1.0;
+}
+
+#taskbar button:hover{
+    color: #FFF;
+    background: @color4;
+    border-radius: 15px;
+    opacity: 0.8;
+}
+
+#network,
+#bluetooth,
+#custom-notification{
+    margin: 6px 2px 6px 8px;
+	padding: 8px 14px 8px 10px;
+    background-color: @background;
+    color: #FFF;
+    border-radius: 12px;
+}
+
+#custom-wfRecording{
+    margin: 6px 2px 6px 8px;
+	padding: 8px 14px 8px 10px;
+    background-color: red;
+    color: #FFF;
+    border-radius: 12px;
+}
+
+#custom-volIcon,
+#custom-system,
+#custom-settings{
+    margin: 6px 2px 6px 8px;
+	padding: 8px 14px 8px 10px;
+    background-color: @background;
+    color: #FFF;
+    border-radius: 12px;
+}
+
+#custom-previous,
+#custom-playpause,
+#custom-next{
+    margin: 6px 2px 6px 8px;
+	padding: 8px 14px 8px 10px;
+    background-color: @color4;
+    color: #FFF;
+    border-radius: 12px;
+}
+
+#mpris{
+    margin: 6px 2px 6px 8px;
+	padding: 8px 14px 8px 10px;
+    background-color: @background;
+    color: #FFF;
+    animation: repeat;
+    animation-name: blink;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes blink {
+    to {
+        color: @color4;
+
+    }
+}
+
+#pulseaudio,
+#pulseaudio-slider,
+#custom-waypaper,
+#custom-wfRecorder,
+#custom-waybarswitch,
+#custom-updates{
+    margin: 6px 2px 6px 8px;
+	padding: 8px 14px 8px 10px;
+    color: #FFF;
+    background-color: @color4;
+    border-radius: 12px;
+}
+
+#pulseaudio-slider trough{
+ min-width: 100px;
+ background: @foreground;
+}
+
+#pulseaudio-slider slider {
+    background: #A1BDCE;
+    background-color: transparent;
+    box-shadow: none;
+    margin-right: 7px;
+}
+
+#clock{
+    background-color: @background;
+    color: #fff;
+    border-radius: 12px;
+    margin: 6px 2px 6px 8px;
+	padding: 8px 14px 8px 10px;
+}
+
+#custom-cava{
+    font-family: Fira Code, JetBrains Mono, Noto Mono, DejaVu Sans Mono;
+    background-color: @background;
+    color: @color4;
+    border-radius: 12px;
+    margin: 6px 2px 6px 8px;
+	padding: 8px 14px 8px 10px;
+}
